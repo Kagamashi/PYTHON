@@ -1,6 +1,8 @@
-# Python uses indentation (spaces or tabs) to define structure of the code, there are no braces or parentheses to mark blocks.
-# Indentation must be consistent - can't mix tabs and spaces
-# By convention 4 spacer per indentation level is recommended
+'''
+Python uses indentation (spaces or tabs) to define structure of the code, there are no braces or parentheses to mark blocks.
+Indentation must be consistent - can't mix tabs and spaces
+By convention 4 spacer per indentation level is recommended
+'''
 
 # Correct indentation
 if x > 5:

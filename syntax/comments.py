@@ -1,7 +1,8 @@
-# Single line comments start with : #
-# Multi-line comments don't exist in python natively, but we can use triple quotes
-# to create multi-line string that acts as a comment ''' or """
-
+'''
+Single line comments start with : #
+Multi-line comments don't exist in python natively, but we can use triple quotes
+to create multi-line string that acts as a comment ' or " (3 times)
+'''
 
 # This is a single-line comment
 
