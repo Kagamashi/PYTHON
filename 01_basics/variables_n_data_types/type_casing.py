@@ -1,0 +1,12 @@
+
+
+# TYPE CASTING 
+
+
+
+
+# DUCK TYPING
+
+
+
+
