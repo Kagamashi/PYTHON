@@ -1,11 +1,12 @@
 '''
+{"A": 1, "B": 2}
 Dictionary is unordered collection of key-value pairs.
 Key must be unique and immutable, while values can be of any data type.
-Methods:
-  keys(): Returns a view of all keys.
-  values(): Returns a view of all values.
-  items(): Returns a view of all key-value pairs.
-  get(key): Returns the value for the specified key (or None if the key doesn’t exist).
+
+  keys():     Returns a view of all keys.
+  values():   Returns a view of all values.
+  items():    Returns a view of all key-value pairs.
+  get(key):   Returns the value for the specified key (or None if the key doesn’t exist).
   update({key: value}): Updates the dictionary with key-value pairs.
 '''
 
