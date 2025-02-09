@@ -5,17 +5,13 @@ Syntax: print(value, ..., sep=' ', end='\n')
   end: Defines what to print at the end (default is a newline \n).
 '''
 
-# Simple print statement
-print("Hello, World!")
-
 # Printing multiple values
 x = 10
 y = 5
 print("x is", x, "and y is", y)  # Output: x is 10 and y is 5
 
-# Custom separator and end parameters
 print("apple", "banana", "cherry", sep=", ")  # Output: apple, banana, cherry
-print("Hello", end="!")  # Output: Hello! (No newline)
+print("Hello", end="!")             # Output: Hello!
 
 
 '''
@@ -28,10 +24,6 @@ Syntax: input(prompt)
 # Getting user input as a string
 name = input("Enter your name: ")
 print("Hello,", name)
-
-# Getting user input and converting to integer
-age = int(input("Enter your age: "))
-print("You are", age, "years old.")
 
 # Getting user input as a float
 price = float(input("Enter the price: "))
