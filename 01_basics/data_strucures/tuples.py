@@ -6,7 +6,8 @@ Once created, cannot be changed or modified.
 - can contain elements of different data types.
 
     len()
-
+    count()
+    index()     Provide index of specified value
 '''
 
 my_tuple = (1, 2, 3) # Output: (1, 2, 3)
