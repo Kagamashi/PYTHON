@@ -2,14 +2,17 @@
 List is an ordered, mutable collection of items.
 - allows duplicates
 - can contain elements of different data types.
+- negative indexing means start from the end
 
   append(item)    Adds an item to the end.
-  pop()           Removes and returns the last item.
+  pop()           Removes specified index (or last item if index no specified)
   extend([items]) Adds all items from another list.
   remove(item)    Removes the first occurrence of the specified item.
   sort()          Sorts the list in place.
   reverse()       Reverses the list in place.
   len()
+  insert()        
+  clear()         Empties the list
 '''
 
 my_list = [1, 2, 3]
@@ -21,3 +24,5 @@ print(my_list)  # Output: [1, 2, 3]
 
 my_list.extend([5, 6])
 print(my_list)  # Output: [1, 2, 3, 5, 6]
+
+thislist = list(("apple", "banana", "cherry")) # double brackets
