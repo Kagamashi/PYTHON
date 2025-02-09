@@ -1,8 +1,0 @@
-
-COMMON METHODS
-
-
-
-BEST PRACTICES
-
-
