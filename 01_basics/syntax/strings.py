@@ -14,16 +14,17 @@ Python does not have a character data type, a single character is simply a strin
 \ooo Octal value
 \xhh Hex value
 
-a = "string"
-a.upper()
-a.lower()
-a.strip()       # removes whitespace from beginning or end
-a.replace("old", "new")
-a.split(",")    # split string into substrings
+  upper()
+  lower()
+  strip()       # removes whitespace from beginning or end
+  replace("old", "new")
+  split(",")    # split string into substrings
+  len()
+
+a = "slicing"
 a[1]
 a[7:12]
 a[:5]
-len(a)
 
 string methods: https://www.w3schools.com/python/python_strings_methods.asp
 '''
