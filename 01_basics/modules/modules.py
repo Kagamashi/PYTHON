@@ -1,5 +1,5 @@
 '''
-Module is a code library
+Module is a code library; used to break down large programs into small manageable and organized files and provides reusability of code
 - dir() lists all function names (or variable names) in a module
 
 built-in modules:
@@ -28,3 +28,17 @@ print(pi)  # Output: 3.141592653589793
 import math as m
 print(m.factorial(5))  # Output: 120
 
+
+''' custom module is simply a .py file '''
+import custom_module
+
+print(custom_module.greet("Alice"))
+print(custom_module.add(2, 3))
+
+
+''' custom package is a directory that contains multiple modules typically with __init__.py file. '''
+# importing package and using it's functions in main
+from custom_package import function1, function2
+
+print(function1())
+print(function2())
