@@ -1,21 +1,37 @@
-''' Special methods (dunder methods) start and end with double underscores (__) 
-These methods enable us to define how objects behave for built-in operations like addition, string representation etc.
-  __init__(): Initializes the object (constructor).
-  __str__(): Defines the string representation of the object.
-  __repr__(): Provides an official string representation of the object.
+'''
+Dunder (double underscore) methods allow operator overloading
+enable us to define how objects behave for built-in operations like addition etc.
+
+common magic methods:
+__init__()      constructor (initialize an object)
+__str__()       string representation (print(obj))
+__repr__()      unambiguous string representation
+__add__()       overloads + operator
+__len__()       called by len(obj)
+__getitem__()   access elements like obj[index]
 '''
 
-class Book:
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
+## __str__() - string representation
+class Person:
+    def __init__(self, name):
+        self.name = name
 
     def __str__(self):
-        return f"{self.title} by {self.author}"
+        return f"Person: {self.name}"
 
-    def __repr__(self):
-        return f"Book({self.title}, {self.author})"
+p = Person("Alice")
+print(p)  # Output: Person: Alice
 
-book = Book("1984", "George Orwell")
-print(str(book))  # Output: 1984 by George Orwell
-print(repr(book))  # Output: Book(1984, George Orwell)
+
+## __add__() - operator overloading
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return Number(self.value + other.value)
+
+n1 = Number(5)
+n2 = Number(10)
+result = n1 + n2
+print(result.value)  # Output: 15
