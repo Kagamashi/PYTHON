@@ -16,8 +16,8 @@ Dictionary is unordered collection of key-value pairs.
 my_dict = {'name': 'Alice', 'age': 25}
 
 # Accessing values
-print(my_dict['name'])  # Output: Alice
+print(my_dict['name'])  # Alice
 
 # Using methods
-print(my_dict.keys())    # Output: dict_keys(['name', 'age'])
-print(my_dict.values())  # Output: dict_values(['Alice', 25])
+print(my_dict.keys())    # dict_keys(['name', 'age'])
+print(my_dict.values())  # dict_values(['Alice', 25])
