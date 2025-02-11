@@ -22,22 +22,22 @@ import re
 # re.match() example
 pattern = r"\d+"  # Matches one or more digits
 result = re.match(pattern, "123abc")
-print(result.group())  # Output: 123
+print(result.group())  # 123
 
 # re.search() example
 result = re.search(pattern, "abc123")
-print(result.group())  # Output: 123
+print(result.group())  # 123
 
 # re.findall() example
 result = re.findall(pattern, "abc123xyz456")
-print(result)  # Output: ['123', '456']
+print(result)  # ['123', '456']
 
 # re.sub() example (replace digits with 'X')
 result = re.sub(pattern, "X", "abc123xyz456")
-print(result)  # Output: abcXxyzX
+print(result)  # abcXxyzX
 
 # Find all words in a string
 pattern = r"\w+"
 text = "Hello, World! Python is awesome."
 result = re.findall(pattern, text)
-print(result)  # Output: ['Hello', 'World', 'Python', 'is', 'awesome']
+print(result)  # ['Hello', 'World', 'Python', 'is', 'awesome']
