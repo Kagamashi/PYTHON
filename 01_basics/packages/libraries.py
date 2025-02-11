@@ -11,4 +11,4 @@ pip uninstall package_name
 # Using the requests library
 import requests # type: ignore
 response = requests.get('https://api.github.com')
-print(response.status_code)  # Output: HTTP status code (e.g., 200)
+print(response.status_code)  # HTTP status code (e.g., 200)
