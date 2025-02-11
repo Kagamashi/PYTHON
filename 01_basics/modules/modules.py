@@ -17,16 +17,16 @@ modules can be imported and we can use their functions, classes, variables:
 
 # Importing the entire module
 import math
-print(math.sqrt(16))  # Output: 4.0
+print(math.sqrt(16))  # 4.0
 
 # Importing specific functions from a module
 from math import sqrt, pi
-print(sqrt(25))  # Output: 5.0
-print(pi)  # Output: 3.141592653589793
+print(sqrt(25))  # 5.0
+print(pi)  # 3.141592653589793
 
 # Importing with an alias
 import math as m
-print(m.factorial(5))  # Output: 120
+print(m.factorial(5))  # 120
 
 
 ''' custom module is simply a .py file '''
