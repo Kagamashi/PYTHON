@@ -30,4 +30,4 @@ first_element = arr[1]
 
 import numpy as np
 matrix = np.array([[1, 2, 3], [4, 5, 6]])  # 2D Array
-print(matrix.shape)  # Output: (2, 3) -> (2 rows, 3 columns)
+print(matrix.shape)  # (2, 3) -> (2 rows, 3 columns)
