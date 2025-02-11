@@ -11,10 +11,10 @@ Once created, cannot be changed or modified.
     index()     Provide index of specified value
 '''
 
-my_tuple = (1, 2, 3) # Output: (1, 2, 3)
+my_tuple = (1, 2, 3) # (1, 2, 3)
 
 # Accessing elements
-print(my_tuple[1])  # Output: 2
+print(my_tuple[1])  # 2
 
 # One item tuple
 thistuple = ("apple",) # comma needed
