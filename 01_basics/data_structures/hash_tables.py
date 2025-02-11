@@ -33,7 +33,7 @@ hash_table["age"] = 31
 del hash_table["city"]
 
 # Checking if a key exists
-print("age" in hash_table)  # output: True
+print("age" in hash_table)  # True
 
 # Iterating through a dictionary
 for key, value in hash_table.items():
