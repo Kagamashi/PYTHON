@@ -77,10 +77,10 @@ llist = LinkedList()
 llist.append(10)
 llist.append(20)
 llist.prepend(5)
-llist.print_list()  # Output: 5 -> 10 -> 20 -> None
+llist.print_list()  # 5 -> 10 -> 20 -> None
 
 llist.delete(10)
-llist.print_list()  # Output: 5 -> 20 -> None
+llist.print_list()  # 5 -> 20 -> None
 
 
 ''' DOUBLY LINKED LIST allows traversal in both directions
@@ -120,4 +120,4 @@ dlist = DoublyLinkedList()
 dlist.append(10)
 dlist.append(20)
 dlist.append(30)
-dlist.print_forward()  # Output: 10 <-> 20 <-> 30 <-> None
+dlist.print_forward()  # 10 <-> 20 <-> 30 <-> None
