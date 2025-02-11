@@ -11,7 +11,7 @@ y = 5
 print("x is", x, "and y is", y)  # x is 10 and y is 5
 
 print("apple", "banana", "cherry", sep=", ")  # apple, banana, cherry
-print("Hello", end="!")             # Hello!
+print("Hello", end="!")  # Hello!
 
 
 '''
