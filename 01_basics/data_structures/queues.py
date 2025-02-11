@@ -1,5 +1,5 @@
 '''
-linear structure that follows FIFO principle, meaning elements are added at the rear and removed from the front
+Linear structure that follows FIFO principle, meaning elements are added at the rear and removed from the front
 
 - collections.deque package which is optimized for fast append and pop operations from both ends
 - queue.Queue (thread-safe)
@@ -10,6 +10,7 @@ use case:
   breadth-first search (BFS) in graphs and trees
   handling requests in web servers
   multi-threaded applications (using queue.Queue)
+  priority queues (heapq)
 '''
 
 ## collections.deque
@@ -71,4 +72,15 @@ class Queue:
 q = Queue()
 q.enqueue(1)
 q.enqueue(2)
-print(q.dequeue())  # Output: 1
+print(q.dequeue())  # 1
+
+
+## priority queue (Heap-Based) : ensures elements with higher priority are dequeued first
+import heapq  # type: ignore
+
+pq = []
+heapq.heappush(pq, (1, "Low priority task"))
+heapq.heappush(pq, (0, "High priority task"))
+
+print(heapq.heappop(pq))  # (0, 'High priority task') (Lowest number has highest priority)
+
