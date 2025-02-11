@@ -19,5 +19,5 @@ my_set.add(4)  # {1, 2, 3, 4}
 # Set operations
 set_a = {1, 2, 3}
 set_b = {3, 4, 5}
-print(set_a.union(set_b))         # Output: {1, 2, 3, 4, 5}
-print(set_a.intersection(set_b))  # Output: {3}
+print(set_a.union(set_b))         # {1, 2, 3, 4, 5}
+print(set_a.intersection(set_b))  # {3}
