@@ -1,0 +1,37 @@
+'''
+preferred over setup.py for modern package management
+works with setuptools, poetry, flit
+
+my_package/
+├── my_package/
+│   ├── __init__.py
+│   ├── module.py
+├── pyproject.toml
+├── README.md
+├── LICENSE
+
+build the package:
+  pip install build
+  python -m build
+
+this generates:
+  dist/my_package-0.1.0.tar.gz (source distribution)
+  dist/my_package-0.1.0-py3-none-any.whl (wheel)
+'''
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_package"
+version = "0.1.0"
+description = "A sample Python package"
+readme = "README.md"
+authors = [{ name = "Your Name", email = "your@email.com" }]
+license = { text = "MIT" }
+dependencies = ["requests>=2.25.0"]
+requires-python = ">=3.6"
+
+[tool.setuptools.packages.find]
+where = ["."]
