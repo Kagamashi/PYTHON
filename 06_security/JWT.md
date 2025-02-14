@@ -34,7 +34,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzAwMDAwMDB9.Fx
 pip install PyJWT
 ```
 
-### **1.2 Generating a JWT Token**
+### **Generating a JWT Token**
 ```python
 import jwt
 import datetime
