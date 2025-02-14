@@ -25,7 +25,7 @@ SECRET_KEY=mysecret
 
 '''
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 import os
 
 load_dotenv()  # Load .env file
