@@ -11,6 +11,7 @@ file_path = os.path.join("folder", "file.txt")
 # modern, cross-platform way
 file_path = Path("folder") / "file.txt"
 
+
 # cross-platform environment variables
 if os.name == "nt":  # Windows
     os.system("cls")
