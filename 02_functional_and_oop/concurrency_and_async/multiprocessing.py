@@ -1,4 +1,6 @@
 '''
+[true parallelism]
+
 Multiprocessing allows to create separate processes, each with its own memory space, enabling true parallelism.
 Useful for CPU-bound tasks.
 Python multiprocessing module provides support for creating and managing processes:
