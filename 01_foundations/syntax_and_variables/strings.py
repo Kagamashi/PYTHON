@@ -14,17 +14,22 @@ Python does not have a character data type, a single character is simply a strin
 \ooo Octal value
 \xhh Hex value
 
+String methods:
   upper()
   lower()
   strip()       # removes whitespace from beginning or end
   replace("old", "new")
   split(",")    # split string into substrings
   len()
+  startswith()  # bool: true/false
+  endswith()
+
 
 a = "slicing"
 a[1]
 a[7:12]
 a[:5]
+a[::-1]   # reverse string
 
 string methods: https://www.w3schools.com/python/python_strings_methods.asp
 '''
@@ -36,5 +41,5 @@ consectetur adipiscing elit..."""
 # F-strings
 name = "John"
 age = 36
-txt = f"My name is {name}, and I am {age}"
+txt = f"My name is {name}, and I am {age}" # f-strings (older alternative was .format())
 print(txt)
