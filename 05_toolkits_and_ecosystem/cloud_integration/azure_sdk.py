@@ -11,8 +11,8 @@ authenticating:
 DefaultAzureCredential() automatically pick best method
 '''
 
-from azure.identity import DefaultAzureCredential
-from azure.mgmt.resource import ResourceManagementClient
+from azure.identity import DefaultAzureCredential # type: ignore
+from azure.mgmt.resource import ResourceManagementClient # type: ignore
 
 # Authenticate using Azure CLI or Managed Identity
 credential = DefaultAzureCredential()
