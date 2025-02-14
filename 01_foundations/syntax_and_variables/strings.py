@@ -3,33 +3,36 @@
 strings are arrays of bytes representing unicode characters
 Python does not have a character data type, a single character is simply a string with a length of 1
 
-# escape characters
-\'   Single Quote
-\\   Backslash
-\n   New Line
-\r   Carriage Return
-\t   Tab
-\b   Backspace
-\f   Form Feed
-\ooo Octal value
-\xhh Hex value
+Escape characters:
+  \'   Single Quote
+  \\   Backslash
+  \n   New Line
+  \r   Carriage Return
+  \t   Tab
+  \b   Backspace
+  \f   Form Feed
+  \ooo Octal value
+  \xhh Hex value
 
 String methods:
   upper()
   lower()
   strip()       # removes whitespace from beginning or end
+  lstrip()
+  rstrip()
   replace("old", "new")
   split(",")    # split string into substrings
   len()
   startswith()  # bool: true/false
   endswith()
+  join()
 
-
-a = "slicing"
-a[1]
-a[7:12]
-a[:5]
-a[::-1]   # reverse string
+Slicing:
+  a = "slicing"
+  a[1]
+  a[7:12]
+  a[:5]
+  a[::-1]   # reverse string
 
 string methods: https://www.w3schools.com/python/python_strings_methods.asp
 '''
