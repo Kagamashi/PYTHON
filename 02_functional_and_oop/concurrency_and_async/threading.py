@@ -1,4 +1,6 @@
 '''
+[ concurrency, not true parallelism]
+
 Multithreading allows to run multiple threads (smaller units of a process) concurrently within a single process
 Python threading module provides a simple way to work with threads
   Creating a thread: You can create a new thread by instantiating the Thread class from the threading module and passing it a target function.
