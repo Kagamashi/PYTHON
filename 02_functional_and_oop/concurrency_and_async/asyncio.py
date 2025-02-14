@@ -1,4 +1,6 @@
 '''
+[asynchronous I/O]
+
 Asynchronous programming allows to handle multiple tasks concurrently without waiting for one to complete before moving to the next.
 It is particularly used for I/O-bound tasks, like reading from files, network requests or database queries where waiting is involved
 
