@@ -50,13 +50,16 @@ print(range_sum(prefix, 2, 6))  # Output: 21 (4 + 1 + 5 + 9 + 2)
 stores the sum of elements from the top-left (0,0) to (i,j)
 
 for each cell (i,j):
-    prefix[i][j]=matrix[i][j]+prefix[i−1][j]+prefix[i][j−1]−prefix[i−1][j−1]
+    prefix[i][j] = matrix[i][j] + prefix[i−1][j] + prefix[i][j−1] − prefix[i−1][j−1]
 
-
+where:
+    prefix[i-1][j] → Sum of elements above (i, j)
+    prefix[i][j-1] → Sum of elements to the left of (i, j)
+    prefix[i-1][j-1] → Common overlapping sum (subtracted once to avoid double-counting)
 '''
 def compute_2d_prefix(matrix):
     rows, cols = len(matrix), len(matrix[0])
-    prefix = [[0] * cols for _ in range(rows)]
+    prefix = [[0] * cols for _ in range(rows)] # initializes 2D list (matrix) filled with zeros
     
     for i in range(rows):
         for j in range(cols):
@@ -78,3 +81,6 @@ matrix = [
 ]
 prefix_matrix = compute_2d_prefix(matrix)
 print(prefix_matrix)
+# 1   3   6
+# 5  12  21
+# 12  27  45
