@@ -27,3 +27,11 @@ class Solution:
 
 
 ## Approach 2: Two-pass Hash Table
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashTable = {}
+        n = len(nums)
+
+        # build hash table
+        for i in range(n):
+            hashTable[nums[i]] = i
