@@ -23,3 +23,8 @@ def my_function(a, b, /, *, c, d):
     print(a + b + c + d)
 
 my_function(5, 6, c = 7, d = 8)
+
+# self represents the instance of a class - it allows twoSum to be called on an instance of Solution
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        return []
