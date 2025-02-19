@@ -26,7 +26,7 @@ class Solution:
 
 
 
-## Approach 2: Two-pass Hash Table
+## Approach 2: Two-pass Hash Table - O(n)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashTable = {}
@@ -35,3 +35,27 @@ class Solution:
         # build hash table
         for i in range(n):
             hashTable[nums[i]] = i
+
+        # find the complement
+        for i in range(n):
+            complement = target - nums[i]
+            if complement in hashTable and hashTable[complement] != i:
+                return [i, hashTable[complement]]
+        
+        return []
+
+
+
+# Approach 3: One-pass Hash Table - O(n)
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashTable = {}
+        n = len(nums)
+
+        for i in range(n):
+            complement = target - nums[i]
+            if complement in hashTable:
+                return [hashTable[complement], i]
+            hashTable[nums[i]] = i
+
+        return []
