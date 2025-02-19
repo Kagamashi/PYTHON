@@ -35,10 +35,10 @@ instead of looping through the array O(n), use prefix sums O(1)
 def range_sum(prefix, L, R):
     if L == 0:
         return prefix[R]
-    return prefix[R] - prefix[L - 1]
+    return prefix[R] - prefix[L - 1] # (14-3), (25-4)
 
 arr = [3, 1, 4, 1, 5, 9, 2]
-prefix = prefix_sum(arr)
+prefix = prefix_sum(arr) # Output: [3, 4, 8, 9, 14, 23, 25]
 
 print(range_sum(prefix, 1, 4))  # Output: 11 (1 + 4 + 1 + 5)
 print(range_sum(prefix, 2, 6))  # Output: 21 (4 + 1 + 5 + 9 + 2)
@@ -47,7 +47,12 @@ print(range_sum(prefix, 2, 6))  # Output: 21 (4 + 1 + 5 + 9 + 2)
 
 '''
 2D Prefix Sum (for Matrices)
-Used to compute sum of submatrices
+stores the sum of elements from the top-left (0,0) to (i,j)
+
+for each cell (i,j):
+    prefix[i][j]=matrix[i][j]+prefix[i−1][j]+prefix[i][j−1]−prefix[i−1][j−1]
+
+
 '''
 def compute_2d_prefix(matrix):
     rows, cols = len(matrix), len(matrix[0])
@@ -58,11 +63,11 @@ def compute_2d_prefix(matrix):
             prefix[i][j] = matrix[i][j]
             
             if i > 0:
-                prefix[i][j] += prefix[i - 1][j]
+                prefix[i][j] += prefix[i - 1][j] # sum of elements above (i,j)
             if j > 0:
-                prefix[i][j] += prefix[i][j - 1]
+                prefix[i][j] += prefix[i][j - 1] # sum of elements to the left of (i,j)
             if i > 0 and j > 0:
-                prefix[i][j] -= prefix[i - 1][j - 1]
+                prefix[i][j] -= prefix[i - 1][j - 1] # common overlapping sum (substracted once to avoid double-counting)
 
     return prefix
 
