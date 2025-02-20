@@ -1,6 +1,6 @@
 '''
 type() function can be used to dynamically create a class
-  type(name, bases, attrs) creates a new class dynamically
+    type(name, bases, attrs) creates a new class dynamically
 '''
 
 # Creating a class dynamically using type()
