@@ -14,7 +14,7 @@ types of Two Pointer approach:
         linked list cycle detection
 '''
 
-''' Opposite Direction
+''' Opposite Direction [left-right]
     - Used for finding pairs with a given sum in a sorted array.
     ✅ More efficient (O(n)) than brute-force (O(n²)) since each element is checked at most once '''
 def two_sum_sorted(arr, target):
@@ -35,47 +35,47 @@ def two_sum_sorted(arr, target):
 
 arr = [1, 2, 3, 4, 6, 8, 9]
 target = 10
-print(two_sum_sorted(arr, target))  # Output: [1, 4] (2 + 8 = 10)
+print(two_sum_sorted(arr, target))  # [0, 6]
 
 
-''' Same Direction
+''' Same Direction [sliding window]
     - Used when processing contiguous subarrays or substrings
     ✅ Time Complexity: O(n), since each character is processed at most twice.
 '''
 def longest_unique_substring(s):
-    seen = set()  # Track characters
-    left = 0
-    max_length = 0
+    seen = set()  # track characters in current window
+    left = 0      # left boundary of the window
+    max_length = 0      # stores maximum length found
     
     for right in range(len(s)):  # Right pointer expands the window
-        while s[right] in seen:  # Shrink from the left if duplicate found
-            seen.remove(s[left])
-            left += 1
+        while s[right] in seen:  # If duplicate found shrink from the left
+            seen.remove(s[left]) # Remove leftmost character
+            left += 1   # Move left pointer forward
         
-        seen.add(s[right])
-        max_length = max(max_length, right - left + 1)
+        seen.add(s[right]) # Add new unique character to the set
+        max_length = max(max_length, right - left + 1)  # Update max length
     
     return max_length
 
 s = "abcabcbb"
-print(longest_unique_substring(s))  # Output: 3 ("abc")
+print(longest_unique_substring(s))  # 3
 
 
-''' Fast-Slow Pointers
+''' Fast-Slow Pointers [tortoise && hare]
     - Used for cycle detection in linked lists (O(n)).
     - Also known as Floyd’s Tortoise and Hare Algorithm.
     ✅ Time Complexity: O(n), as each node is visited at most once. '''
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
-        self.next = next
+        self.next = next # Pointer to the next node
 
 def has_cycle(head):
-    slow, fast = head, head  # Two pointers
+    slow, fast = head, head  # Slow moves one step at a time, fast moves two steps
 
-    while fast and fast.next:
-        slow = slow.next
-        fast = fast.next.next  # Fast pointer moves twice as fast
+    while fast and fast.next: # Ensures fast does not reach None
+        slow = slow.next      # Move slow pointer one step
+        fast = fast.next.next # Fast pointer moves twice as fast
 
         if slow == fast:
             return True  # Cycle detected
@@ -90,4 +90,11 @@ node1.next = node2
 node2.next = node3
 node3.next = node1  # Cycle
 
-print(has_cycle(node1))  # Output: True
+print(has_cycle(node1))   True
+
+'''
+Cycle : traversal never reaches None causing an infinite loop
+1 → 2 → 3 → 4
+         ↑    ↓
+         6 ← 5
+'''
