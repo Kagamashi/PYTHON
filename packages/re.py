@@ -7,6 +7,8 @@ text manipulation
 
 from re import match, search, findall, sub 
 
+pattern, string, replace = ""
+
 match(pattern, string)        # match pattern from start of a string
 search(pattern, string)       # search pattern in a string
 findall(pattern, string)      # find all occurrences of pattern in a string

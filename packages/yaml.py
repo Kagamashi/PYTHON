@@ -4,7 +4,9 @@ YAML File Handling
 pip install pyyaml
 '''
 
-import yaml
+import yaml # type: ignore
+
+data, stream = ""
 
 yaml.dump(data, stream)     # Convert Python object to YAML string
 yaml.safe_load(stream)      # Convert YAML string to Python object with safe defaults   

@@ -7,6 +7,8 @@ StringIO : handling string data without disk I/O
 
 from io import BytesIO
 
+data = ""
+
 BytesIO.write(data)  # write data to memory 
 BytesIO.read()       # read data from memory
 BytesIO.getvalue()   # get data from memory

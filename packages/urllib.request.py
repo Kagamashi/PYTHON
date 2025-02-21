@@ -4,7 +4,9 @@ Fetching URLs
 downloading web content
 '''
 
-from urlib.request import urlopen
+from urlib.request import urlopen # type: ignore
+
+url, response = ""
 
 urlopen(url)    # open a URL
 response.read() # read response data
