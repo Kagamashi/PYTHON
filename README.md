@@ -2,11 +2,15 @@
 
 **Python** is a high-level, interpreted programming language known for its **simplicity, readability, and versatility**. It is widely used in **web development, automation, data science, AI, and scripting**.
 
-- **Official Docs**: [https://docs.python.org/3/](https://docs.python.org/3/)
-- **PEP Index (Python Enhancement Proposals)**: [https://peps.python.org/](https://peps.python.org/)
-- **PyPI (Python Package Index)**: [https://pypi.org/](https://pypi.org/)
-- **Virtual Environments Guide**: [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
-- **Style Guide (PEP8)**: [https://peps.python.org/pep-0008/](https://peps.python.org/pep-0008/)
+- [Official Docs](https://docs.python.org/3/)
+- [PEP Index (Python Enhancement Proposals](https://peps.python.org/)
+- [PyPI (Python Package Index)](https://pypi.org/)
+- [Virtual Environments Guide](https://docs.python.org/3/library/venv.html)
+- [Style Guide (PEP8)](https://peps.python.org/pep-0008/)
+
+- [Python Roadmapp](https://roadmap.sh/python)
+- [Course Udemy](https://www.udemy.com/course/complete-python-bootcamp/learn/lecture/9388518#overview)
+- [BANGER](https://www.youtube.com/watch?v=lvO88XxNAzs&ab_channel=stoneycodes)
 
 ---
 
@@ -23,3 +27,9 @@
 - **Async/Await**: Python’s built-in support for asynchronous programming.
 
 ---
+
+### Snippets
+
+```py
+prefix = [0] * n # creates list of size n filled with 0
+```
