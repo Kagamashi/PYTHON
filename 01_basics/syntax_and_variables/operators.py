@@ -9,6 +9,7 @@
 **  Exponentiation (raises the first number to the power of the second)
 '''
 
+
 # COMPARISON OPERATORS
 '''
 ==  Equal to
@@ -18,6 +19,7 @@
 <=  Less than or equal to
 >=  Greater than or equal to
 '''
+
 
 # ASSIGNMENT OPERATORS
 '''
@@ -31,6 +33,7 @@
 **= Raises the left operand to the power of the right operand and assigns the result.
 '''
 
+
 # LOGICAL OPERATORS
 '''
 and   Returns True if both operands are true.
@@ -38,12 +41,12 @@ or    Returns True if at least one operand is true.
 not   Returns True if the operand is false (reverses the result).
 '''
 
+
 # MEMBERSHIP OPERATORS
 '''
 in     Returns True if a value exists in the sequence.
 not in Returns True if a value does not exist in the sequence.
 '''
-
 my_list = [1, 2, 3, 4, 5]
 my_string = "hello"
 
@@ -51,18 +54,19 @@ print(3 in my_list)      # True (3 is in the list)
 print(6 not in my_list)  # True (6 is not in the list)
 print('h' in my_string)  # True ('h' is in the string)
 
+
 # IDENTITY OPERATORS
 '''
 is     Returns True if both variables are the same object.
 is not Returns True if both variables are not the same object.
 '''
-
 a = [1, 2, 3]
 b = a
 c = [1, 2, 3]
 
 print(a is b)      # True (a and b point to the same list object)
 print(a is not c)  # True (a and c point to different objects, even though they contain the same values)
+
 
 # BIWISE OPERATORS
 '''
