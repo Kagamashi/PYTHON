@@ -7,9 +7,14 @@ Solution: O(N) iterate through list and create set
 - set is implemented as hash table, so lookup/insert/delete should be in O(1) average
 '''
 
+List = [1, 2, 3, 1]
+    
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:     
+    def containsDuplicate(self, nums: List[int]) -> bool:      # type: ignore
         if len(set(nums)) == len(nums):
             return False
         else: 
             return True
+
+empty_set = set()
+empty_dict = {}
